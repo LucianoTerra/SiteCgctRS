@@ -13,6 +13,7 @@ a:link {
     width: 50px;
 }
 .navbar {
+    width: 100%;
     background-color: rgb(10, 150, 15);
 }
 .navbar a {
