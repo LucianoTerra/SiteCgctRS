@@ -5,11 +5,15 @@
 #contato {
     padding: 5rem 0;
 }
+h2 {
+    color: white;
+}
 a:link {
     text-decoration: none;
 }
 
 .logo {
+    margin-bottom: 0.5rem;
     width: 50px;
 }
 .navbar {
@@ -39,8 +43,15 @@ a:link {
 .heroDesc {
     font-size: 5.5rem;
 }
-@media (min-width: 999px) and (max-width: 1200px) {  
+/* Typical device breakpointS
+Pequenas: até 600px
+celular: de 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes: acima de 1200px*/
+@media (min-width: 769px) and (max-width: 1200px) {  
     .bgimage { 
+        width: 100vw;
         height: 100vh;
         position: relative;
       
@@ -54,23 +65,9 @@ a:link {
         font-size: 3rem;
     }
 }
-@media (max-width: 1000px) {  
-    .bgimage { 
-        height: 100vh;
-        position: relative;
-       
-        background: url("Imag/Capa\ 3.png");
-        background-size: cover; 
-    } 
-    .heroTitle {
-        font-size: 3rem;
-    }
-    .heroDesc {
-        font-size: 2rem;
-    }
-}
-@media (max-width: 600px)   {
-    .bgimage {   
+@media (max-width: 768px)   {
+    .bgimage {
+        width: 100vw;   
         height: 100vh;
         position: relative;
         
@@ -81,7 +78,7 @@ a:link {
         font-size: 2rem;
     }
     .heroDesc {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 .heroText {
